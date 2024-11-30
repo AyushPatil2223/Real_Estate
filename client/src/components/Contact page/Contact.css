@@ -1,0 +1,108 @@
+/* ContactPage.css */
+
+.container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #ebf8ff, #e9d8fd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .form-container {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 640px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #4a5568;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: medium;
+    color: #4a5568;
+    margin-bottom: 0.25rem;
+  }
+  
+  .input,
+  .textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.375rem;
+    transition: border-color 0.2s;
+  }
+  
+  .input:focus,
+  .textarea:focus {
+    outline: none;
+    border-color: #4299e1;
+  }
+  
+  .error {
+    color: #e53e3e;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+  }
+  
+  .suggestions {
+    margin-top: 0.5rem;
+    background: #edf2f7;
+    border-radius: 0.375rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .suggestion-item {
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  
+  .suggestion-item:hover {
+    background: #e2e8f0;
+  }
+  
+  .submit-button {
+    width: 100%;
+    background: #3182ce;
+    color: white;
+    font-weight: semibold;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    transition: background 0.2s;
+  }
+  
+  .submit-button:hover {
+    background: #2b6cb0;
+  }
+  
+  .submit-button[disabled] {
+    opacity: 0.75;
+    cursor: not-allowed;
+  }
+  
+  .spinner {
+    display: inline-block;
+    animation: spin 1s linear infinite;
+    margin-right: 0.5rem;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
